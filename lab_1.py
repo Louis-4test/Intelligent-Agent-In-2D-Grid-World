@@ -15,6 +15,7 @@ def create_grid(size, obstacles, target_pos):
     grid[target_pos] = 2  # Set target
     return grid
 
+# Agent creation
 class Agent:
     def __init__(self, start_pos):
         self.position = start_pos  # Initial position of the agent
@@ -24,7 +25,8 @@ class Agent:
         """Updates the agent's position."""
         self.position = new_position
         self.path.append(new_position)
-
+        
+# Algorithm for path finding
 def heuristic(a, b):
     """Heuristic function for A*: Manhattan distance"""
     return abs(a[0] - b[0]) + abs(a[1] - b[1])
