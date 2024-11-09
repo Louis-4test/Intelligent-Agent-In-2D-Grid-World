@@ -86,4 +86,5 @@ else:
     print("No path found to target!")
 
 # Run the A* search to find the path to the target
+# Pinting the path to target
 print("Path to target:", path)
